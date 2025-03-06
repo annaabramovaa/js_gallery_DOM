@@ -1,10 +1,10 @@
 'use strict';
 
-document.getElementById('thumbs').addEventListener('click', function () {
-  event.preventDefault();
+document.getElementById('thumbs').addEventListener('click', function (e) {
+  e.preventDefault();
 
   const bigImg = document.querySelector('.gallery__large-img');
-  let target = event.target;
+  let target = e.target;
 
   if (target.tagName === 'IMG') {
     target = target.parentElement;
